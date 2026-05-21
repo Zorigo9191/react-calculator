@@ -1,0 +1,41 @@
+@use "./styles/variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  max-width: 801px;
+  margin: auto;
+  background-color: v.$elevation-2;
+}
+
+.render {
+  display: grid;
+  margin: 3rem auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 100%;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 500px;
+  }
+
+  &__button {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+}

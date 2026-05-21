@@ -1,0 +1,33 @@
+@use "../../styles/variables" as v;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  min-height: 80vh;
+  box-shadow: v.$box-shadow;
+  border-radius: v.$border-radius;
+  background-color: v.$elevation;
+  color: orange;
+  margin: 1rem auto;
+
+  &__title {
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  &__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.6rem;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

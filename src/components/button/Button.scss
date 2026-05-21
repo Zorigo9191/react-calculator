@@ -1,0 +1,27 @@
+@use "../../styles/variables" as v;
+
+.Button {
+  background-color: v.$button-color;
+  color: black;
+  text-shadow: v.$text-shadow;
+  box-shadow: v.$box-shadow;
+  font-size: v.$font-size;
+  width: 7rem;
+  height: 5rem;
+  border-radius: v.$border-radius;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(124, 124, 124);
+  cursor: pointer;
+
+  &.operator {
+    font-size: 1.6rem;
+    background-color: rgb(241, 222, 200);
+  }
+
+  &.action {
+    background-color: rgb(228, 145, 139);
+  }
+}
